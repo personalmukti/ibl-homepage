@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+
+    <head>
+        <!-- Mobile Specific Meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Favicon-->
+        <link rel="shortcut icon" href="img/fav.png">
+        <!-- Author Meta -->
+        <meta name="author" content="colorlib">
+        <!-- Meta Description -->
+        <meta name="description" content="">
+        <!-- Meta Keyword -->
+        <meta name="keywords" content="">
+        <!-- meta character set -->
+        <meta charset="UTF-8">
+        <!-- Site Title -->
+        <title>HOMEPAGE - IBL</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+        <!--
+   CSS
+   ============================================= -->
+        <link rel="stylesheet" href="css/linearicons.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/magnific-popup.css">
+        <link rel="stylesheet" href="css/animate.min.css">
+        <link rel="stylesheet" href="css/owl.carousel.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/custom.css">
+        <link rel="stylesheet" href="css/parallax.css">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">Logo Anda</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Menu 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Menu 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Menu 3</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section class="hero">
+        <div class="container-fluid d-flex justify-content-center alig-items-center">
+            <img src="img/parallax/bg.png" id="bg"> 
+            <img src="img/parallax/sea.png" id="sea">
+            <img src="img/parallax/logo.png" id="logo">
+            <img src="img/parallax/ship.png" id="ship">
+            
+        </div>
+        </section>
+          
+        <script src="js/vendor/jquery-2.2.4.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+            integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous">
+            </script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/jquery.ajaxchimp.min.js"></script>
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <script src="js/slick.js"></script>
+        <script src="js/jquery.counterup.min.js"></script>
+        <script src="js/waypoints.min.js"></script>
+        <script src="js/main.js"></script>
+
+        <script type="text/javascript">
+            let bg = document.getElementById("bg");
+            let sea = document.getElementById("sea");
+            let ship = document.getElementById("ship");
+            let companame = document.getElementById("companame");
+
+            window.addEventListener('scroll', function(){
+                var value = window.scrollY;
+
+                bg.style.top = value * 0.5 + 'px';
+                ship.style.left = value * 3 + 'px';
+                logo.style.top = value * 2 + 'px';
+                
+            })
+        </script>
+    </body>
+
+</html>

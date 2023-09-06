@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #0a2a43;
+    min-height: 1000px;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #0a2a43, transparent);
+    z-index: 100;
+}
+section:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    z-index: 100;
+    mix-blend-mode: color;
+}
+
+section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+@media (max-width: 768px) {
+    logo {
+        align-items: center ; /* Mengurangi lebar gambar pada layar kecil */
+    }
+}
+
+#companame{
+    position: absolute;
+    top: 100px;
+    left: 25px;
+    color: #1d1819;
+    font-size: 10em;
+    z-index: 1;
+    font-family: vollkorn;
+}
+
+/* CSS untuk navbar */
+.navbar {
+    background: rgba(255, 255, 255, 0.0 ); /* Latar belakang transparan dengan alpha channel */
+    position: fixed; /* Tetap di bagian atas layar saat digulir */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Menempatkan navbar di atas semua elemen lain */
+    display: flex;
+    justify-content: space-between; /* Membuat logo dan menu terletak di sisi kanan dan kiri */
+    align-items: center;
+    padding: 10px 20px; /* Padding untuk ruang di sekitar logo dan menu */
+}
+
+.navbar-logo {
+    /* CSS untuk logo */
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar-menu {
+    /* CSS untuk menu */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-menu li {
+    margin-right: 20px; /* Jarak antara setiap item menu */
+}
+
+.navbar-menu li:last-child {
+    margin-right: 0; /* Hapus margin-right pada item menu terakhir */
+}
+
+.navbar-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
